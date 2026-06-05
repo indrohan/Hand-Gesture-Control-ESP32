@@ -1,23 +1,59 @@
-# Hand-Gesture-Control
+# Hand Gesture Controlled ESP32 LED System
 
-Your hand is your mouse.
+## Overview
 
-A real-time hand gesture control system built with Python, OpenCV, and MediaPipe
-that lets you control your browser using nothing but your fingers.
+This project uses Computer Vision and Embedded Systems to control LEDs connected to an ESP32 using hand gestures detected through a webcam.
 
-## Gesture Controls
+The Python application uses OpenCV and MediaPipe to detect hand gestures, then sends commands to the ESP32 over Wi-Fi using the HTTP protocol.
 
-- 1 Finger → Open Claude AI
-- 2 Fingers → Open ChatGPT
-- 3 Fingers → Open Gemini
-- 4 Fingers → Open LinkedIn
-- Fist → Close everything
+## Features
 
-## Tech Stack
-Python · OpenCV · MediaPipe
+* Real-time hand gesture detection
+* ESP32 Wi-Fi communication
+* Control 4 LEDs using gestures
+* HTTP Client-Server architecture
+* Computer Vision + IoT integration
 
-## Getting Started
-pip install opencv-python mediapipe
-python main.py
+## Hardware Used
 
-This is level 1. A lot more to come.
+* ESP32 Development Board
+* 4 LEDs
+* 220Ω Resistors
+* USB Cable
+* Laptop Webcam
+
+## Software Used
+
+* Python
+* OpenCV
+* MediaPipe
+* Requests
+* Arduino IDE
+
+## Gesture Mapping
+
+| Gesture   | Action       |
+| --------- | ------------ |
+| 1 Finger  | LED1 ON      |
+| 2 Fingers | LED2 ON      |
+| 3 Fingers | LED3 ON      |
+| 4 Fingers | LED4 ON      |
+| Fist      | All LEDs OFF |
+
+## Communication Protocol
+
+HTTP Protocol over Wi-Fi
+
+## Technologies
+
+* Embedded Systems
+* ESP32
+* IoT
+* Computer Vision
+* Python
+* Arduino
+
+## Author
+
+Nishant Kiran Ghorpade
+B.Tech Electronics & Telecommunication Engineering
